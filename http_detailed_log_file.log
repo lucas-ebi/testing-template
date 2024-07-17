@@ -1,0 +1,125 @@
+2024-07-17 15:58:39,694 - http_logger - DEBUG - Received GET request: Path=/hello, Headers={'Accept': 'application/json'}, Body=None
+2024-07-17 15:58:39,695 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, World!'}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,978 - http_logger - ERROR - Failed to process POST data: {"age": 30}. Error: 'name'
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:04,978 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received GET request: Path=/hello, Headers={'Accept': 'application/json'}, Body=None
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, World!'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,979 - http_logger - ERROR - Failed to process POST data: {"age": 30}. Error: 'name'
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:04,979 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:04,980 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:13,882 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,882 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,882 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,883 - http_logger - ERROR - Failed to process POST data: {"age": 30}. Error: 'name'
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received GET request: Path=/hello, Headers={'Accept': 'application/json'}, Body=None
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, World!'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 15:59:13,883 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,884 - http_logger - ERROR - Failed to process POST data: {"age": 30}. Error: 'name'
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 15:59:13,884 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,088 - http_logger - ERROR - Failed to process POST data: {"age": 30}. Error: 'name'
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Received GET request: Path=/hello, Headers={'Accept': 'application/json'}, Body=None
+2024-07-17 16:02:35,088 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, World!'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"name": "Alice"}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'name': 'Alice'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'message': 'Hello, Alice!'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,089 - http_logger - ERROR - Failed to process POST data: {"age": 30}. Error: 'name'
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Received POST request: Path=/hello, Headers={'Content-Type': 'application/json'}, Body={"age": 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Parsed POST data: {'age': 30}
+2024-07-17 16:02:35,089 - http_logger - DEBUG - Generated response: Status=200, Headers={'Content-Type': 'application/json'}, Body={'error': 'Name not provided'}
