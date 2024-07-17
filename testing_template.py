@@ -47,11 +47,14 @@ import unittest
 import logging
 from logging.handlers import RotatingFileHandler
 
+
 def setup_logger(name, log_file, level=logging.DEBUG):
     """
     Initializes a logger to capture detailed logs, useful for debugging.
     """
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
     file_handler = RotatingFileHandler(log_file, maxBytes=10**6, backupCount=3)
     file_handler.setFormatter(formatter)
     console_handler = logging.StreamHandler()
@@ -62,7 +65,9 @@ def setup_logger(name, log_file, level=logging.DEBUG):
     logger.addHandler(console_handler)
     return logger
 
-logger = setup_logger('test_logger', 'test_log_file.log')
+
+logger = setup_logger("test_logger", "test_log_file.log")
+
 
 def buggy_function(*args, **kwargs):
     """
@@ -71,14 +76,16 @@ def buggy_function(*args, **kwargs):
     """
     raise KeyError("Simulated bug")
 
+
 def fixed_function(*args, **kwargs):
     """
     Placeholder for the fixed function.
     Implements the fixed behavior.
     """
-    if 'name' not in kwargs:
+    if "name" not in kwargs:
         return {"error": "Name not provided"}
     return {"message": f"Hello, {kwargs['name']}!"}
+
 
 def handle_with_exception_handling(func, *args, **kwargs):
     """
@@ -90,6 +97,7 @@ def handle_with_exception_handling(func, *args, **kwargs):
         return {"error": "KeyError encountered"}
     except Exception as e:
         return {"error": str(e)}
+
 
 class TestBugFixTemplate(unittest.TestCase):
     def setUp(self):
@@ -114,7 +122,7 @@ class TestBugFixTemplate(unittest.TestCase):
         """
         with self.assertRaises(KeyError):
             buggy_function(name="Alice")
-    
+
     def test_buggy_function_with_exception_handling(self):
         """
         Scenario II: Buggy callee with exception handling by its caller should capture the exception and output an error message,
@@ -122,7 +130,7 @@ class TestBugFixTemplate(unittest.TestCase):
         """
         result = handle_with_exception_handling(buggy_function, name="Alice")
         self.assertEqual(result, {"error": "KeyError encountered"})
-    
+
     def test_fixed_function_without_exception_handling(self):
         """
         Scenario III: Fixed callee without exception handling by its caller should NOT raise an exception,
@@ -147,7 +155,7 @@ class TestBugFixTemplate(unittest.TestCase):
         """
         with self.assertRaises(KeyError):
             buggy_function(age=30)
-    
+
     def test_missing_name_buggy_function_with_exception_handling(self):
         """
         Scenario II: Buggy callee with exception handling by its caller should capture the exception and output an error message,
@@ -173,5 +181,6 @@ class TestBugFixTemplate(unittest.TestCase):
         result = handle_with_exception_handling(fixed_function, age=30)
         self.assertEqual(result, {"error": "Name not provided"})
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
