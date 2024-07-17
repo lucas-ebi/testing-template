@@ -21,10 +21,10 @@ Wraps function calls in a try-except block to handle exceptions gracefully.
 
 Provides a structure to test various scenarios with detailed comments:
 
-- **Scenario 8.a**: Buggy callee without exception handling by its caller should raise an exception, which matches the observed output (reproduces the bug).
-- **Scenario 8.b**: Buggy callee with exception handling by its caller should capture the exception and output an error message, which doesn't match the observed output either (intermediary fixing to avoid crashing).
-- **Scenario 8.c**: Fixed callee without exception handling by its caller should NOT raise an exception, and the output matches the expected output (unprotectedly fixed).
-- **Scenario 8.d**: Fixed callee with exception handling by its caller should output the function's expected result, which matches the expected output (fixed for good!).
+- **Scenario I**: Buggy callee without exception handling by its caller should raise an exception, which matches the observed output (reproduces the bug).
+- **Scenario II**: Buggy callee with exception handling by its caller should capture the exception and output an error message, which doesn't match the observed output either (intermediary fixing to avoid crashing).
+- **Scenario III**: Fixed callee without exception handling by its caller should NOT raise an exception, and the output matches the expected output (unprotectedly fixed).
+- **Scenario IV**: Fixed callee with exception handling by its caller should output the function's expected result, which matches the expected output (fixed for good!).
 
 ### Detailed Test Methods
 
@@ -109,7 +109,7 @@ class TestBugFixTemplate(unittest.TestCase):
 
     def test_buggy_function_without_exception_handling(self):
         """
-        Scenario 8.a: Buggy callee without exception handling by its caller should raise an exception,
+        Scenario I: Buggy callee without exception handling by its caller should raise an exception,
         which matches the observed output (reproduces the bug).
         """
         with self.assertRaises(KeyError):
@@ -117,7 +117,7 @@ class TestBugFixTemplate(unittest.TestCase):
     
     def test_buggy_function_with_exception_handling(self):
         """
-        Scenario 8.b: Buggy callee with exception handling by its caller should capture the exception and output an error message,
+        Scenario II: Buggy callee with exception handling by its caller should capture the exception and output an error message,
         which doesn't match the observed output either (intermediary fixing to avoid crashing).
         """
         result = handle_with_exception_handling(buggy_function, name="Alice")
@@ -125,7 +125,7 @@ class TestBugFixTemplate(unittest.TestCase):
     
     def test_fixed_function_without_exception_handling(self):
         """
-        Scenario 8.c: Fixed callee without exception handling by its caller should NOT raise an exception,
+        Scenario III: Fixed callee without exception handling by its caller should NOT raise an exception,
         and the output matches the expected output (unprotectedly fixed).
         """
         self.assertDoesNotRaise(fixed_function, name="Alice")
@@ -134,7 +134,7 @@ class TestBugFixTemplate(unittest.TestCase):
 
     def test_fixed_function_with_exception_handling(self):
         """
-        Scenario 8.d: Fixed callee with exception handling by its caller should output the function's expected result,
+        Scenario IV: Fixed callee with exception handling by its caller should output the function's expected result,
         which matches the expected output (fixed for good!).
         """
         result = handle_with_exception_handling(fixed_function, name="Alice")
@@ -142,7 +142,7 @@ class TestBugFixTemplate(unittest.TestCase):
 
     def test_missing_name_buggy_function_without_exception_handling(self):
         """
-        Scenario 8.a: Buggy callee without exception handling by its caller should raise an exception,
+        Scenario I: Buggy callee without exception handling by its caller should raise an exception,
         which matches the observed output (reproduces the bug).
         """
         with self.assertRaises(KeyError):
@@ -150,7 +150,7 @@ class TestBugFixTemplate(unittest.TestCase):
     
     def test_missing_name_buggy_function_with_exception_handling(self):
         """
-        Scenario 8.b: Buggy callee with exception handling by its caller should capture the exception and output an error message,
+        Scenario II: Buggy callee with exception handling by its caller should capture the exception and output an error message,
         which doesn't match the observed output either (intermediary fixing to avoid crashing).
         """
         result = handle_with_exception_handling(buggy_function, age=30)
@@ -158,7 +158,7 @@ class TestBugFixTemplate(unittest.TestCase):
 
     def test_missing_name_fixed_function_without_exception_handling(self):
         """
-        Scenario 8.c: Fixed callee without exception handling by its caller should NOT raise an exception,
+        Scenario III: Fixed callee without exception handling by its caller should NOT raise an exception,
         and the output matches the expected output (unprotectedly fixed).
         """
         self.assertDoesNotRaise(fixed_function, age=30)
@@ -167,7 +167,7 @@ class TestBugFixTemplate(unittest.TestCase):
 
     def test_missing_name_fixed_function_with_exception_handling(self):
         """
-        Scenario 8.d: Fixed callee with exception handling by its caller should output the function's expected result,
+        Scenario IV: Fixed callee with exception handling by its caller should output the function's expected result,
         which matches the expected output (fixed for good!).
         """
         result = handle_with_exception_handling(fixed_function, age=30)
